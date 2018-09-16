@@ -3,8 +3,8 @@
       <div class="text">
           Select the color you would like to display
       </div>
-      <input (colorPickerChange)="color=$event" class="input-solid-color" [style.background]="color" [cpAlphaChannel]="'always'" [cpOutputFormat]="'rgba'" [cpPresetColors]="['#fff', '#2889e9']" [cpOKButton]="true"
-          [cpAddColorButton]="true" [(colorPicker)]="color" />
+      <button (colorPickerChange)="color=$event" class="input-solid-color" [style.background]="color" [cpAlphaChannel]="'always'" [cpOutputFormat]="'rgba'" [cpPresetColors]="['#fff', '#2889e9']" [cpOKButton]="true"
+          [cpAddColorButton]="true" [(colorPicker)]="color"></button>
       <button class="button" (click)="setColor()">Set</button>
   </div>
   <div class="row center">

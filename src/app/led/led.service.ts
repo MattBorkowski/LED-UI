@@ -18,8 +18,8 @@ export class LedService {
   setColor(colors){
     let body = {
       r: colors[0],
-      g: colors[1],
-      b: colors[2]
+      g: colors[2],
+      b: colors[1]
     };
     console.log("sending color: %o",body);
     return this.http.post(this.url,body,this.httpOptions).pipe(
