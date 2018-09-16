@@ -10,8 +10,7 @@ export class LedService {
   url = 'http://192.168.1.76:3000/set-color'; 
   httpOptions = {
     headers: new HttpHeaders({
-      'Content-Type':  'application/json',
-      'Access-Control-Allow-Origin': '*'
+      'Content-Type':  'application/json'
     })
   };
   constructor(private http: HttpClient) { }
