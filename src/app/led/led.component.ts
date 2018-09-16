@@ -30,4 +30,10 @@ export class LedComponent implements OnInit {
     .subscribe();
   }
 
+  public turnOff(){
+    this.setColors = ['0','0','0'];
+    this.ledService.setColor(this.setColors)
+    .subscribe();
+  }
+
 }
